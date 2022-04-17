@@ -69,13 +69,40 @@ def check_schedules(all_schedules):
 
 def find_all_schedules(classes):
     all_schedules = []
+    num_sect = []
     indexes = find_class(classes)
     product = 1
 
     for course in indexes:
+        num_sect.append(len(data[course[0]][1])-1)
         product *= len(data[course[0]][1])-1
 
-    return product
+    sche = []
 
-print(find_all_schedules([['AGC', '290'], ['AAS', '010']]))
+    for i in range(len(indexes)):
+        sche.append(0)
+
+    all_schedules.append(' '.join([str(x) for x in sche]))
+
+    for i in range(product-1):
+        sche[len(indexes) - 1] += 1
+
+        for j in range(len(indexes) - 1, -1, -1):
+            if sche[j] > num_sect[j] -1 :
+                sche[j - 1] += 1
+                sche[j] = 0
+            else:
+                break
+        all_schedules.append(' '.join([str(x) for x in sche]))
+
+    c = 0
+    for arr in all_schedules:
+        all_schedules[c]=[int(x) for x in arr.split(' ')]
+        c += 1
+    
+    return all_schedules
+    
+
+
+print(find_all_schedules([['AGC', '290'], ['CHE', '002A'], ['AAS', '010']]))
 
