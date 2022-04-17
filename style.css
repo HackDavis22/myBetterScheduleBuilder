@@ -1,20 +1,22 @@
-a {
-    color: cornflowerblue;
+*{
+    margin: 0;
+    padding: 0;
 }
 
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-image: url("LandingPage.jpg");
     
-    
-
 }
 .header {
     margin-top: 1%;
     text-align: center;
     vertical-align: middle;
-    object-position: 50px 10%;
+    
   
+}
+.class_image{
+    vertical-align: left;
+    transform: scale(.7,.7);
 }
 
 
