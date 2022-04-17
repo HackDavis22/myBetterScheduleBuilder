@@ -1,5 +1,6 @@
-a {
-    color: cornflowerblue;
+*{
+    margin: 0;
+    padding: 0;
 }
 
 html{
@@ -27,6 +28,10 @@ p {
     text-align: center;
     vertical-align: middle;
     object-position: 50px 10%;
+}
+.class_image{
+    vertical-align: left;
+    transform: scale(.7,.7);
 }
 
 * {
