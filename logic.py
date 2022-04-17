@@ -32,18 +32,21 @@ def find_class(target):
     class_index = []
     o_class = []
     
-    for k in range(len(target)):
-        o_class = []
-        for i in range(len(data)):
-            if data[i][0] == target[k][0]:
-                o_class.append(i)
-                for j in range(len(data[i])):
-                    if data[i][j][0] == target[k][1]:
-                        o_class.append(j)
-                        break
-                break
-        class_index.append(o_class)
-    return class_index
+    try:
+        for k in range(len(target)):
+            o_class = []
+            for i in range(len(data)):
+                if data[i][0] == target[k][0]:
+                    o_class.append(i)
+                    for j in range(len(data[i])):
+                        if data[i][j][0] == target[k][1]:
+                            o_class.append(j)
+                            break
+                    break
+            class_index.append(o_class)
+        return class_index
+    except:
+        print('Invalid Class')
 
 def if_compat (sec1, sec2):
     #Checks if two sections are compatible
