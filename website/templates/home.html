@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block title %} 
+Home
+{% endblock %}
+
+{% block content %}
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>myScheduleBuilder</title>
+  <meta name="description" content="">
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet"> 
+
+</head>
+
+<body>
+  <img class="center fit" src= {{url_for('static', filename = 'lp1.jpg')}}>
+  <a href="selection.html">
+    <button class="btn">Click here to start building your dream schedule!</button>
+  </a>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript" language="JavaScript">
+    function set_body_height() { // set body height = window height
+        $('body').height($(window).height());
+    }
+    $(document).ready(function() {
+        $(window).bind('resize', set_body_height);
+        set_body_height();
+    });
+</script>
+</div>
+</body>
+
+{% endblock %}
