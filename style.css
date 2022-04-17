@@ -10,15 +10,24 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: #124e78;
     min-height: 100%;
-    
-    
+    text-align: center;
+
+
 }
+
+h1{
+    color: #f0f0c9;
+}
+
+p {
+    color: #f0f0c9;
+}
+
 .header {
     margin-top: 1%;
     text-align: center;
     vertical-align: middle;
-    
-  
+    object-position: 50px 10%;
 }
 .class_image{
     vertical-align: left;
@@ -37,5 +46,34 @@ body {
     display: block;
     margin: auto;
 }
+
+/* making the button
+
+/* Container needed to position the button. Adjust the width as needed */
+
+  
+.btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #f0f0c9;
+    color: #124e78;
+    font-size: 24px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    position: sticky;
+    bottom: 0;
+    width: 50%;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+  }
+  
+.btn:hover {
+    background-color: #f0f0c969;
+  }
 
 
