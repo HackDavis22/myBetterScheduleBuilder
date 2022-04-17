@@ -11,11 +11,9 @@ body {
     background-color: #124e78;
     min-height: 100%;
     text-align: center;
-
-
 }
 
-h1{
+.header1 h1{
     color: #f0f0c9;
 }
 
@@ -28,6 +26,8 @@ p {
     text-align: center;
     vertical-align: middle;
     object-position: 50px 10%;
+    border-radius: 5px;
+    position: relative;
 }
 .class_image{
     vertical-align: left;
@@ -79,4 +79,72 @@ p {
 .input-groupmb-3 {
     font-size: 20px;
     color:#f0f0c9
+}
+
+
+  .header h1 {
+    border-radius: 25px;
+    background: #EDB219;
+    padding: 20px;
+    width: 400px;
+    height: 80x;
+    margin-top: 1%;
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.header h2 {
+    border-radius: 25px;
+    background: #EDB219;
+    padding: 20px;
+    width: 400px;
+    height: 70x;
+    margin-top: 1%;
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+}
+.cows {
+    position: absolute;
+    top: 80;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+.cows2 {
+    position: absolute;
+    top: 100;
+    right: 10%;
+    transform: translate(-50%, -50%);
+}
+
+.input {
+
+    margin-top: 1%;
+    text-align: center;
+    vertical-align: left;
+    color: white;
+    font-size: large;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.box2 {
+
+    text-align: center;
+    vertical-align: middle;
 }
