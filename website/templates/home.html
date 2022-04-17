@@ -1,3 +1,10 @@
+{% extends "base.html" %}
+
+{% block title %} 
+Home
+{% endblock %}
+
+{% block content %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,9 +22,9 @@
   </head>
 
 <body>
-  <img class="center fit" src="Landing Page 2.jpg">
+  <img class="center-fit" src={{url_for('static', filename = 'lp.jpg')}}>
   
-  <a href="ClassSelectionPg.html">
+  <a href="\selection">
     <button class="btn">Click here to start building your dream schedule!</button>
   </a>
 
@@ -38,3 +45,4 @@
 
 </html>
 
+{% endblock %}

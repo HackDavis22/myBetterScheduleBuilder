@@ -1,9 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %} 
+Results
+{% endblock %}
+
+{% block content %}
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>myScheduleBuilder</title>
+  <title>Results</title>
   <meta name="description" content="">
   <link rel="stylesheet" href="style.css">
   
@@ -15,10 +22,10 @@
   </head>
 
 <body>
-  <img class="center fit" src="Landing Page 2.jpg">
+  <img class="center-fit" src={{url_for('static', filename = 'lp.jpg')}}>
   
-  <a href="ClassSelectionPg.html">
-    <button class="btn">Click here to start building your dream schedule!</button>
+  <a href="\">
+    <button class="btn">Go back home.</button>
   </a>
 
 <script src="http://code.jquery.com/jquery-latest.js"></script>
@@ -38,3 +45,4 @@
 
 </html>
 
+{% endblock %}
