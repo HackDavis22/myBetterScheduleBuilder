@@ -3,8 +3,14 @@
     padding: 0;
 }
 
+html{
+    height: 100%;
+}
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #124e78;
+    min-height: 100%;
+    
     
 }
 .header {
@@ -17,6 +23,19 @@ body {
 .class_image{
     vertical-align: left;
     transform: scale(.7,.7);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+.fit { /* set relative picture size */
+    max-width: 100%;
+    max-height: 100%;
+}
+.center {
+    display: block;
+    margin: auto;
 }
 
 
